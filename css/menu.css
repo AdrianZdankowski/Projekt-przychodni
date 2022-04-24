@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(/images/tlo-menu.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: "Lato", sans-serif;
+}
+
+#logo {
+	background-color: greenyellow;
+	height: 85px;
+	text-align: center;
+	font-size: 25px;
+	font-family: "PT Mono", monospace;
+}
+
+#hellomsg {
+	margin-top: -5px;
+}
+
+.sidebar {
+	height: calc(100vh - 85px);
+	width: 180px;
+	background-color: whitesmoke;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sidebarelement {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 3px;
+}
+
+img {
+	width: 75px;
+	height: 75px;
+}
+
+#logoutbtn {
+	padding: 3px;
+}
+
+.sidebar > a:last-child {
+	margin-top: auto;
+	margin-bottom: 10px;
+}
+
+#container {
+	display: flex;
+}
+
+.sidebar > a {
+	text-decoration: none;
+	color: black;
+	width: 100%;
+	transition: box-shadow 0.3s ease-out;
+}
+
+.sidebar > a:hover {
+	box-shadow: inset 0 0 3px 1px black;
+}
+
+.userinfo {
+	background-color: whitesmoke;
+	opacity: 80%;
+	font-size: 20px;
+	min-width: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	padding: 15px;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px 3px black;
+	flex-wrap: wrap;
+}
+
+.infopanel {
+	background: rgba(245, 245, 245, 0.8);
+	font-size: 20px;
+	min-width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 15px;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px 3px black;
+	flex-wrap: wrap;
+	height: 650px;
+	overflow-y: scroll;
+}
+
+.infopanel::-webkit-scrollbar {
+	display: none;
+}
+
+.info2 > input {
+	text-align: right;
+	border: 1px solid transparent;
+}
+
+.userinfo > a {
+	flex-basis: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#logbutton {
+	height: 25px;
+	margin-top: 10px;
+	padding: 3px;
+	background-color: greenyellow;
+	border-radius: 10%;
+}
+
+#logbutton a {
+	padding: 10px;
+}
+
+#warning {
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.docinfotable {
+	border: 1px solid black;
+	border-spacing: 0;
+	margin: 10px;
+	min-width: 700px;
+}
+
+.docinfotable th,
+.docinfotable td {
+	border: 1px solid black;
+	padding: 5px;
+	height: 50px;
+}
+
+.docinfotable td {
+	width: 25%;
+	text-align: center;
+}
+
+.error {
+	text-align: center;
+	color: red;
+	margin-top: 10px;
+}
+
+.error2 {
+	text-align: center;
+	font-size: 12px;
+	color: red;
+	margin-bottom: 10px;
+}
+
+#appointment {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: whitesmoke;
+	border: 2px solid black;
+	border-radius: 5%;
+	opacity: 80%;
+	text-align: center;
+	width: 600px;
+	height: 700px;
+	padding: 10px;
+	margin-top: 10px;
+	overflow-y: scroll;
+}
+
+#appointment::-webkit-scrollbar {
+	display: none;
+}
+
+#deleteuserpanel {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: whitesmoke;
+	border: 2px solid black;
+	border-radius: 5%;
+	opacity: 80%;
+	text-align: center;
+	height: 200px;
+	padding: 10px;
+}
+
+#delusr-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+#delusr-form input {
+	margin: 10px;
+}
+
+#appt-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+#appt-form > * {
+	margin: 20px;
+}
+
+#appt-header {
+	font-size: 32px;
+	margin-top: -5px;
+}
+
+.menuformInput {
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.menuformInput:hover {
+	font-size: 12px;
+}
+
+#descriptionInput {
+	width: 200px;
+	height: 75px;
+	border-radius: 5px;
+}
+
+.menuformdiv {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 400px;
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px 3px black;
+}
+
+.menuformdiv > * {
+	margin: 5px;
+}
+
+#apptsubmit {
+	width: 150px;
+	height: 50px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px 3px black;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+#apptsubmit:hover {
+	font-size: 14px;
+	cursor: pointer;
+}
+
+label {
+	font-weight: bold;
+}
+
+.edit_user_form {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	width: 500px;
+	height: 300px;
+}
+
+.edit_userdiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 15px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px 3px black;
+	width: 300px;
+	height: 150px;
+}
+
+.edit_userdiv_input {
+	height: 25px;
+	width: 150px;
+	margin: 10px;
+	padding: 2px;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#edit_userdiv_info {
+	text-align: center;
+	font-size: 14px;
+}
+
+#success {
+	text-align: center;
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px 3px black;
+	background-color: greenyellow;
+	margin-top: 10px;
+}
+
+#phoneinputfield {
+	font-size: 12px;
+}
+
+#time-window-info {
+	font-size: 14px;
+	margin-top: -20px;
+}
+
+#display-errors {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: -45px;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+	background-color: rosybrown;
+	font-weight: bold;
+}

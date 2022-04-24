@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-image: url(/images/tlo.png);
+	height: 100vh;
+	font-family: "Lato", sans-serif;
+}
+
+.forgetpswd {
+	background-image: url(/images/thinking.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 27% 27%;
+}
+
+#logo {
+	background-color: greenyellow;
+	text-align: center;
+	font-size: 25px;
+	font-family: "PT Mono", monospace;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 90vh;
+}
+
+#box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#panel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 300px;
+	padding: 20px;
+	border: 2px solid black;
+	border-radius: 5%;
+	text-align: center;
+	background-color: whitesmoke;
+	opacity: 80%;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#hpanel {
+	margin: 10px;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+input {
+	margin: 5px;
+	padding: 3px;
+}
+
+p {
+	margin-top: 5px;
+}
+
+#register {
+	margin-top: 10px;
+}
+
+#logbutton {
+	height: 25px;
+	margin-top: 10px;
+	background-color: greenyellow;
+	border-radius: 10%;
+}
+
+#logbutton a {
+	padding: 10px;
+}
+
+.error {
+	color: red;
+	margin-top: 5px;
+}
+
+.error2 {
+	text-align: center;
+	font-size: 12px;
+	color: red;
+	margin-bottom: 10px;
+}
+
+#newpswd_result {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#copytext:active {
+	background-color: grey;
+}
